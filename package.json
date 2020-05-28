@@ -1,0 +1,27 @@
+{
+  "name": "platziverse-db",
+  "version": "1.0.0",
+  "description": "esta es una simple plataforma iot esta es modulo de bd",
+  "main": "index.js",
+  "scripts": {
+    "test": "DEBUG=platziverse:* ava test/agent-test.js --verbose",
+    "lint": "standard --fix",
+    "setup": "DEBUG=platziverse:* node setup.js"
+  },
+  "author": "matcop",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^3.8.2",
+    "sqlite3": "^4.2.0",
+    "standard": "^14.3.4"
+  },
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "debug": "^4.1.1",
+    "defaults": "^1.0.3",
+    "inquirer": "^7.1.0",
+    "pg": "^8.2.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.10"
+  }
+}
