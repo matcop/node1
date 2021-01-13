@@ -3,14 +3,10 @@
   "version": "1.0.0",
   "description": "esta es una simple plataforma iot esta es modulo de bd",
   "main": "index.js",
-  "scripts": {
-    
-  },
+  "scripts": {},
   "author": "matcop",
   "license": "MIT",
-  "devDependencies": {
-   
-  },
+  "devDependencies": {},
   "dependencies": {
     "colors": "^1.4.0",
     "yargs": "^16.2.0"
