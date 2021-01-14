@@ -13,7 +13,7 @@ const argv=require('yargs')
 .command('actualizar', 'este comando actualizara el etado de una tarea',{
     description:{
         default:true,
-        alias:'a',
+        alias:'d',
         description:'ademas de usar el comando actualiza, este tiene un alias a '
     },
     completado:{
