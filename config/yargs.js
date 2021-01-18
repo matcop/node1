@@ -1,28 +1,27 @@
 
+const descripcion = {
+    demand: true,
+    alias: 'd',
+    desc: 'Descripción de la tarea por hacer'
+};
+
+const completado = {
+    default: true,
+    alias: 'c',
+    desc: 'Marca como completado o pendiente la tarea'
+};
+
+
 
 const argv=require('yargs')
 .command('crear','comando para crear tareas',{
-    description:{
-        demand:true,
-        alias:'d',
-        desc:'ademas de usar el comando crear, este tiene un alias de c para que pueda usarlo'
-    }
-
-   
-})
+    descripcion
+    })
 .command('actualizar', 'este comando actualizara el etado de una tarea',{
-    description:{
-        default:true,
-        alias:'d',
-        description:'ademas de usar el comando actualiza, este tiene un alias a '
-    },
-    completado:{
-        default:true,
-        alias:'c',
-        description:'marca como completado una tarea'
-
-    }
+    descripcion,
+    completado
 })
+.command('borrar','borrar una tarea',{descripcion})
 .help()
 .argv;
 
